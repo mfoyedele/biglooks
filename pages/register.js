@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import api from '../api';
+
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import image from '/assets';
@@ -9,8 +9,9 @@ const index = () => {
   let [username, setUsername] = React.useState('');
   let [password, setPassword] = React.useState('');
 
-  const login = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
     try {
       await api.post('/api/auth', { username, password });
       router.push('/account');
@@ -19,6 +20,7 @@ const index = () => {
       console.log(e);
     }
   };
+
   return (
     <>
       <div class='mt-8 sm:mx-auto sm:w-full sm:max-w-md'>
@@ -26,7 +28,7 @@ const index = () => {
           <div class='flex justify-center'>
             <Image src={image.logo} width={150} height={150} alt='logo' />
           </div>
-          <p>Please enter your credentials to login.</p>
+          <p>Please enter the required credentials.</p>
         </div>
         <div class='bg-white py-8 px-6 shadow rounded-lg sm:px-10'>
           <div>
@@ -36,7 +38,26 @@ const index = () => {
                   for='email'
                   class='block text-sm font-medium text-gray-700'
                 >
-                  USERNAME
+                  NAME
+                </label>
+                <div class='mt-1'>
+                  <input
+                    onChange={(e) => setUsername(e.target.value)}
+                    autoComplete='on'
+                    type='text'
+                    id='name'
+                    name='name'
+                    required
+                    class='w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500'
+                  />
+                </div>
+              </div>
+              <div>
+                <label
+                  for='email'
+                  class='block text-sm font-medium text-gray-700'
+                >
+                  EMAIL
                 </label>
                 <div class='mt-1'>
                   <input
@@ -52,13 +73,50 @@ const index = () => {
               </div>
               <div>
                 <label
+                  for='email'
+                  class='block text-sm font-medium text-gray-700'
+                >
+                  METER NUMBER
+                </label>
+                <div class='mt-1'>
+                  <input
+                    onChange={(e) => setUsername(e.target.value)}
+                    autoComplete='on'
+                    type='number'
+                    id='meter'
+                    name='meter'
+                    required
+                    class='w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500'
+                  />
+                </div>
+              </div>
+              <div>
+                <label
+                  for='email'
+                  class='block text-sm font-medium text-gray-700'
+                >
+                  PHONE NUMBER
+                </label>
+                <div class='mt-1'>
+                  <input
+                    onChange={(e) => setUsername(e.target.value)}
+                    autoComplete='on'
+                    type='tel'
+                    id='phone'
+                    name='phone'
+                    placeholder='234-012-345-6789'
+                    pattern='[0-9] {3}-[0-9] {3}-[0-9] {3}-[0-9] {4}'
+                    required
+                    class='w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500'
+                  />
+                </div>
+              </div>
+              <div>
+                <label
                   for='password'
-                  class='flex items-center justify-between text-sm font-medium text-gray-700'
+                  class='flex text-sm font-medium text-gray-700'
                 >
                   PASSWORD
-                  <span class='inline-block align-baseline'>
-                    Forgot password?
-                  </span>
                 </label>
 
                 <div class='mt-1'>
@@ -77,13 +135,13 @@ const index = () => {
                 onClick={(e) => login(e)}
                 class='w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500'
               >
-                Sign in
+                Register
               </button>
             </form>
             <div>
               <p class='mt-1 w-full text-center py-2 px-4'>
-                Don't have an account?
-                <span class='text-blue-500 hover:text-blue-600'> Register</span>
+                Already have an account?
+                <span class='text-blue-500 hover:text-blue-600'> Login</span>
               </p>
             </div>
           </div>
