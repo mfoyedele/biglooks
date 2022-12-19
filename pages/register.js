@@ -17,7 +17,7 @@ const index = () => {
   return (
     <>
       <div class='mt-8 sm:mx-auto sm:w-full sm:max-w-md'>
-        <div class='mt-4 py-8 px-6 text-center'>
+        <div class='mt-4 py-4 px-6 text-center'>
           <div class='flex justify-center'>
             <Image src={image.logo} width={150} height={150} alt='logo' />
           </div>
@@ -33,17 +33,16 @@ const index = () => {
                 >
                   NAME
                 </label>
-                <div class='mt-1'>
-                  <input
-                    onChange={(e) => setUsername(e.target.value)}
-                    autoComplete='on'
-                    type='text'
-                    id='name'
-                    name='name'
-                    required
-                    class='w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500'
-                  />
-                </div>
+
+                <input
+                  onChange={(e) => setUsername(e.target.value)}
+                  autoComplete='on'
+                  type='text'
+                  id='name'
+                  name='name'
+                  required
+                  class='w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500'
+                />
               </div>
               <div>
                 <label
@@ -52,17 +51,16 @@ const index = () => {
                 >
                   EMAIL
                 </label>
-                <div class='mt-1'>
-                  <input
-                    onChange={(e) => setUsername(e.target.value)}
-                    autoComplete='on'
-                    type='email'
-                    id='email'
-                    name='email'
-                    required
-                    class='w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500'
-                  />
-                </div>
+
+                <input
+                  onChange={(e) => setUsername(e.target.value)}
+                  autoComplete='on'
+                  type='email'
+                  id='email'
+                  name='email'
+                  required
+                  class='w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500'
+                />
               </div>
               <div>
                 <label
@@ -71,17 +69,16 @@ const index = () => {
                 >
                   METER NUMBER
                 </label>
-                <div class='mt-1'>
-                  <input
-                    onChange={(e) => setUsername(e.target.value)}
-                    autoComplete='on'
-                    type='number'
-                    id='meter'
-                    name='meter'
-                    required
-                    class='w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500'
-                  />
-                </div>
+
+                <input
+                  onChange={(e) => setUsername(e.target.value)}
+                  autoComplete='on'
+                  type='number'
+                  id='meter'
+                  name='meter'
+                  required
+                  class='w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500'
+                />
               </div>
               <div>
                 <label
@@ -90,19 +87,18 @@ const index = () => {
                 >
                   PHONE NUMBER
                 </label>
-                <div class='mt-1'>
-                  <input
-                    onChange={(e) => setUsername(e.target.value)}
-                    autoComplete='on'
-                    type='tel'
-                    id='phone'
-                    name='phone'
-                    placeholder='234-012-345-6789'
-                    pattern='[0-9] {3}-[0-9] {3}-[0-9] {3}-[0-9] {4}'
-                    required
-                    class='w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500'
-                  />
-                </div>
+
+                <input
+                  onChange={(e) => setUsername(e.target.value)}
+                  autoComplete='on'
+                  type='tel'
+                  id='phone'
+                  name='phone'
+                  placeholder='234-012-345-6789'
+                  pattern='[0-9] {3}-[0-9] {3}-[0-9] {3}-[0-9] {4}'
+                  required
+                  class='w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500'
+                />
               </div>
               <div>
                 <label
@@ -112,16 +108,14 @@ const index = () => {
                   PASSWORD
                 </label>
 
-                <div class='mt-1'>
-                  <input
-                    onChange={(e) => setPassword(e.target.value)}
-                    type='password'
-                    id='password'
-                    name='password'
-                    required
-                    class='w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500'
-                  />
-                </div>
+                <input
+                  onChange={(e) => setPassword(e.target.value)}
+                  type='password'
+                  id='password'
+                  name='password'
+                  required
+                  class='w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500'
+                />
               </div>
               <button
                 type='submit'
