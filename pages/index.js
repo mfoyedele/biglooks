@@ -3,6 +3,7 @@ import api from '../api';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import image from '/assets';
+import Link from 'next/link';
 
 const index = () => {
   const router = useRouter();
@@ -83,7 +84,11 @@ const index = () => {
             <div>
               <p class='mt-1 w-full text-center py-2 px-4'>
                 Don't have an account?
-                <span class='text-blue-500 hover:text-blue-600'> Register</span>
+                <Link href={{ pathname: 'register' }}>
+                  <span class='text-blue-500 hover:text-blue-600 px-1'>
+                    Register
+                  </span>
+                </Link>
               </p>
             </div>
           </div>

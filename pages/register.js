@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import image from '/assets';
+import Link from 'next/link';
 
 const index = () => {
   const router = useRouter();
@@ -11,14 +12,6 @@ const index = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    try {
-      await api.post('/api/auth', { username, password });
-      router.push('/account');
-    } catch (e) {
-      setPassword('');
-      console.log(e);
-    }
   };
 
   return (
@@ -132,7 +125,7 @@ const index = () => {
               </div>
               <button
                 type='submit'
-                onClick={(e) => login(e)}
+                onClick={handleSubmit}
                 class='w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500'
               >
                 Register
@@ -141,7 +134,11 @@ const index = () => {
             <div>
               <p class='mt-1 w-full text-center py-2 px-4'>
                 Already have an account?
-                <span class='text-blue-500 hover:text-blue-600'> Login</span>
+                <Link href={{ pathname: '/' }}>
+                  <span class='text-blue-500 hover:text-blue-600 px-1'>
+                    Login
+                  </span>
+                </Link>
               </p>
             </div>
           </div>
