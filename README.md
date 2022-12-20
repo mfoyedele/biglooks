@@ -12,7 +12,7 @@ Below are the username and password used for the testing of the authentification
 
 ![alt text](https://github.com/mfoyedele/biglooks/blob/main/assets/utilitypage.png?raw=true)
 
-Successful login!
+Successfully login!
 
 
 ![alt text](https://github.com/mfoyedele/biglooks/blob/main/assets/register.png?raw=true)
