@@ -34,6 +34,7 @@ function Nav() {
             <NavLink href='/'>Buy Meter</NavLink>
             <div>Transaction History</div>
             <div>Contact | </div>
+
             <a onClick={logout} class='font-bold text-sky-900 cursor-pointer'>
               Logout
             </a>
