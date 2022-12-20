@@ -4,7 +4,11 @@ BIGLooks is an Internet of Things (IOT) app that ease the purchase of utilities 
 
 ![alt text](https://github.com/mfoyedele/biglooks/blob/main/assets/login.png?raw=true)
 
-` [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Open [http://oyedele-musa-funso-tranter-fe-test.vercel.app/] with your browser to see the above login page.
+
+Below are the username and password used for the testing of the authentification of the app.
+Username: musaoyedele3@gmail.com 
+Password: musa123
 
 ## Learn More
 
