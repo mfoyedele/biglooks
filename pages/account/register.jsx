@@ -116,7 +116,7 @@ function Register() {
                       errors.fullName ? 'is-invalid' : ''
                     }`}
                     required
-                    class='w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500'
+                    class='w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-sky-900 focus:ring-1 focus:ring-sky-900'
                   />
                   <div className='invalid-feedback'>
                     {errors.fullName?.message}
@@ -138,7 +138,7 @@ function Register() {
                       errors.username ? 'is-invalid' : ''
                     }`}
                     required
-                    class='w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500'
+                    class='w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-sky-900 focus:ring-1 focus:ring-sky-900'
                   />
                   <div className='invalid-feedback'>
                     {errors.username?.message}
@@ -160,7 +160,7 @@ function Register() {
                       errors.meterNumber ? 'is-invalid' : ''
                     }`}
                     required
-                    class='w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500'
+                    class='w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-sky-900 focus:ring-1 focus:ring-sky-900'
                   />
                   <div className='invalid-feedback'>
                     {errors.meterNumber?.message}
@@ -183,7 +183,7 @@ function Register() {
                       errors.phoneNumber ? 'is-invalid' : ''
                     }`}
                     required
-                    class='w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500'
+                    class='w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-sky-900 focus:ring-1 focus:ring-sky-900'
                   />
                   <div className='invalid-feedback'>
                     {errors.phoneNumber?.message}
@@ -205,7 +205,7 @@ function Register() {
                       errors.password ? 'is-invalid' : ''
                     }`}
                     required
-                    class='w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500'
+                    class='w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-sky-900 focus:ring-1 focus:ring-sky-900'
                   />
                   <div className='invalid-feedback'>
                     {errors.password?.message}
@@ -213,7 +213,7 @@ function Register() {
                 </div>
                 <button
                   disabled={formState.isSubmitting}
-                  class='w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500'
+                  class='w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-sky-900 hover:bg-sky-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-900'
                 >
                   {formState.isSubmitting && (
                     <span className='spinner-border spinner-border-sm mr-1'></span>
@@ -224,7 +224,7 @@ function Register() {
                   <p class='mt-1 w-full text-center py-2 px-4'>
                     Already have an account?
                     <Link href='/account/login'>
-                      <span class='text-blue-500 hover:text-blue-600 px-1'>
+                      <span class='text-sky-900 hover:text-sky-900 px-1'>
                         Login
                       </span>
                     </Link>

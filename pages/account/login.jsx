@@ -104,7 +104,7 @@ function Login() {
                       errors.username ? 'is-invalid' : ''
                     }`}
                     required
-                    class='w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500'
+                    class='w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-sky-900 focus:ring-1 focus:ring-sky-900'
                   />
                 </div>
 
@@ -131,7 +131,7 @@ function Login() {
                       errors.password ? 'is-invalid' : ''
                     }`}
                     required
-                    class='w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500'
+                    class='w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-sky-900 focus:ring-1 focus:ring-sky-900'
                   />
                 </div>
                 <div className='invalid-feedback'>
@@ -141,7 +141,7 @@ function Login() {
               <button
                 type='submit'
                 disabled={formState.isSubmitting}
-                class='w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500'
+                class='w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-sky-900 hover:bg-sky-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-900'
               >
                 {formState.isSubmitting && (
                   <span className='spinner-border spinner-border-sm mr-1'></span>
@@ -152,7 +152,7 @@ function Login() {
                 <p class='mt-1 w-full text-center py-2 px-4'>
                   Don't have an account?
                   <Link href='/account/register'>
-                    <span class='text-blue-500 hover:text-blue-600 px-1'>
+                    <span class='text-sky-900 hover:text-sky-900 px-1'>
                       Register
                     </span>
                   </Link>
