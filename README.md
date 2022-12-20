@@ -7,20 +7,26 @@ BIGLooks is an Internet of Things (IOT) app that ease the purchase of utilities 
 Open [http://oyedele-musa-funso-tranter-fe-test.vercel.app/] with your browser to see the above login page.
 
 Below are the username and password used for the testing of the authentification of the app.
-Username: musaoyedele3@gmail.com 
-Password: musa123
+* Username: musaoyedele3@gmail.com 
+* Password: musa123
 
-## Learn More
+![alt text](https://github.com/mfoyedele/biglooks/blob/main/assets/utilitypage.png?raw=true)
 
-To learn more about Next.js, take a look at the following resources:
+Successful login!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+![alt text](https://github.com/mfoyedele/biglooks/blob/main/assets/register.png?raw=true)
+
+Sign up page 
+
+
+### Tech Stack 
+* NextJs 
+* Axios 
+* TailwindCss 
+* React-hook-form
+
 
 ## Deploy on Vercel
+http://oyedele-musa-funso-tranter-fe-test.vercel.app/
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
