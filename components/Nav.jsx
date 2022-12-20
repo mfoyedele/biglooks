@@ -34,7 +34,7 @@ function Nav() {
             <NavLink href='/'>Buy Meter</NavLink>
             <div>Transaction History</div>
             <div>Contact | </div>
-            <a onClick={logout} className='nav-item nav-link'>
+            <a onClick={logout} class='test-sky-900 font-bold'>
               Logout
             </a>
           </div>
