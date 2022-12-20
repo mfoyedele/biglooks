@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 // users in JSON file for simplicity, store in a db for production applications
-let users = require('data/users.json');
+let users = require('https://639a3f4b16b0fdad77584051.mockapi.io/api/v3/users');
 
 export const usersRepo = {
     getAll: () => users,
