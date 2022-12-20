@@ -215,9 +215,7 @@ function Register() {
                   disabled={formState.isSubmitting}
                   class='w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-sky-900 hover:bg-sky-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-900'
                 >
-                  {formState.isSubmitting && (
-                    <span className='spinner-border spinner-border-sm mr-1'></span>
-                  )}
+                  {formState.isSubmitting && <span></span>}
                   Register
                 </button>
                 <div>

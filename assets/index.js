@@ -1,3 +1,4 @@
 import logo from './iotafrica.png';
+import under from './under.webp';
 
-export default { logo };
+export default { logo, under };
