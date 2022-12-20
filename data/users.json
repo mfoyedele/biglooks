@@ -1,0 +1,22 @@
+[
+    {
+        "fullName": "MUSA FUNSO OYEDELE",
+        "username": "musaoyedele3@gmail.com",
+        "meterNumber": "15",
+        "phoneNumber": "+2348106049197",
+        "hash": "$2a$10$TIoT.JNysBwiOkUMSwrfx.CH1iwq.IUOOT83/EHt84RTiXiUFMks.",
+        "id": 1,
+        "dateCreated": "2022-12-19T20:16:28.985Z",
+        "dateUpdated": "2022-12-19T20:16:28.985Z"
+    },
+    {
+        "fullName": "Funso Khalifa",
+        "username": "kehindet@gmail.com",
+        "meterNumber": "20",
+        "phoneNumber": "+2348106049188",
+        "hash": "$2a$10$6IxdV.SH.kg8crp07TYaMOX85texRQdbXX8prruNIaHW8zpkuS/I.",
+        "id": 2,
+        "dateCreated": "2022-12-20T07:27:40.708Z",
+        "dateUpdated": "2022-12-20T07:27:40.708Z"
+    }
+]
